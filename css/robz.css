@@ -1,0 +1,317 @@
+body {
+  /*background-color: #A1A1A1;  */
+  color: #4B4B4B;    
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  padding-bottom:40px; 
+  padding-top:20px; 
+}
+
+h1, h2 , h3, h4, h5, p, li {
+  font-family: inherit;
+  font-weight: 400;
+  color: #4B4B4B;
+  margin: 0;
+  padding: 0;
+}
+i {
+  margin-right: 3px;
+}
+a:hover {
+  color: #006291;
+  text-decoration: none;
+}
+
+/* container */
+.container-fluid  { 
+  max-width: 860px; 
+  margin: 0 auto;
+}
+.wrapper {
+  background-color: #FFFFFF;
+  /*-webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset;
+     -moz-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset;
+          box-shadow: 0 1px 6px rgba(0, 0, 0, 0.30), 0 0 40px rgba(0, 0, 0, 0.10) inset;  */
+  padding: 50px 40px 19px 40px;  
+}
+.info, 
+.message, 
+.skill, 
+.specifics, 
+.venture, 
+.venture > span {
+  font-size: 13px;
+  font-weight: 400;
+}
+.contact, 
+.heading, 
+#portfolio, 
+.resume {
+  margin: 0 0 65px 0;  
+}
+
+
+/* the header portion */
+.image {
+  
+  float: left;
+  margin: 0 20px 5px 0;
+  padding: 4px;
+}
+.name {
+  color: #4A4A4A;
+  font-size: 24px;
+  line-height: 34px;
+  text-transform: uppercase;
+}
+.profession, 
+.services {
+  font-size: 16px; 
+  line-height: 34px;
+}
+.profession {
+  color: #389B17;
+}
+.services {
+  margin-top: 34px;
+}
+.services > a {
+  float: right; 
+}
+
+/* resume */
+.caption {
+  border-bottom: 1px dotted #389B17;
+  color: #389B17;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 15px;
+  text-transform: uppercase;
+}
+.wrapper > .caption {
+  margin-bottom: 11px;
+}
+.activity {
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: 4px;
+}
+.venture > span {
+  float: right;
+}
+.specifics {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.skill {
+  padding-top: 1px;
+  font-weight: 400;
+}
+.skill + .skill {
+  padding-bottom: -1px;
+}
+.skill > span {
+  float: right;
+  font-size: 10px;
+  font-weight: 400;
+  margin: 1px 0 0 0;
+  padding: 0;
+}
+.caption + .activity, 
+.caption + .venture,
+.caption + .specifics, 
+.caption + .skill, 
+.caption + .info {
+    margin-top: 5px;
+}
+.caption + .skill {
+    margin-top: 4px;
+}
+
+/* portfolio */
+#portfolio {
+  margin-bottom: 40px;
+}
+.portfolio-item {
+  display: inline-block;
+  margin-bottom: 12px;
+  vertical-align: top;
+  width: 215px;
+}
+.portfolio-item > img {
+  max-width: 100%;
+  margin-bottom: -1px;
+}
+.portfolio-details {
+  border: 1px solid #D1D1D1;
+  padding: 12px 12px 10px 12px;
+}
+.portfolio-details > h4 {
+  color: #3c3c3c;
+  font-size: 12px; 
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 3px;
+  text-transform: uppercase;
+}
+.portfolio-details > p {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.4;
+  margin-top: 5px;
+}
+.portfolio-details > p + img {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.portfolio-details > h4 + img {
+  margin-top: 7px;
+  margin-bottom: 5px;
+}
+.portfolio-details > img + h4 {
+   margin-top: 10px;
+}
+.portfolio-details a {
+  font-size: 13px;
+  font-weight: 400;
+}
+.portfolio-details i {
+  font-size: 13px;
+  font-weight: normal;
+}
+.portfolio-links {
+  margin-top: 10px !important;
+}
+
+/* contact tab */
+#location {
+  border: 1px solid #D8D8D8;
+  height: 200px;
+  margin-bottom: 5px;
+  width: 100%;
+}
+#location img {
+    max-width: none;
+}
+.info {
+  height: 20px; 
+  display: block;
+}
+.info > span {
+  float: right;
+}
+
+
+@media (min-width: 768px) and (max-width: 979px) {
+
+  .wrapper {
+    padding: 50px 30px 19px 30px;  
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 768px) {
+  
+  body {
+    padding: 0;
+  }
+  .wrapper {
+    padding: 50px 30px 19px 30px;  
+  }
+
+}
+
+@media (min-width: 569px) and (max-width: 767px) {
+  
+  body {
+    padding: 0;
+  }
+  .wrapper {
+    padding: 40px 30px 0px 30px;  
+  }
+  .contact, 
+  .heading, 
+  #portfolio, 
+  .resume {
+    margin: 0 0 25px 0;  
+  }
+
+}
+
+@media (min-width: 240px) and (max-width: 568px) {
+
+  body {
+    padding: 0;
+  }
+  .wrapper {
+    padding: 25px 20px 0px 20px;  
+  }
+  .contact, 
+  .heading, 
+  #portfolio, 
+  .resume {
+    margin: 0 0 25px 0;  
+  }
+  .image {
+    width: 70px;
+    margin: 0px 10px 0px 0px;
+  }
+  .name {
+    font-size: 16px; 
+    line-height: 20px;
+  }
+  .profession {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .services {
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: 10px;
+  }
+  .message, 
+  .servicetext {
+    line-height: 16px; 
+  }
+
+}
+
+.icon{font-family: 'EntypoRegular'; 
+	background-image: none;
+	background-position: 0 0;
+	background-repeat: repeat;
+	display: inline;
+	font-style: normal;
+	font-weight: normal;
+	height: auto;
+	line-height: 10px;
+	margin-top: 0;
+	text-decoration: inherit;
+	vertical-align: baseline;
+	width: auto;
+	font-size: 27px;
+}
+
+.google:before {
+    content: "";
+}
+.facebook:before {
+    content: "";
+}
+.twitter:before {
+    content: "";
+}
+.linkedin:before {
+    content: "";
+}
+.skype:before {
+    content: "";
+}
+.github:before {
+    content: "";
+}
+
+
+@font-face{font-family:'EntypoRegular';src:url('../fonts/entypo-social.eot');src:url('../fonts/entypo-social.eot?#iefix') format('embedded-opentype'),url('../fonts/entypo-social.woff') format('woff'),url('../fonts/entypo-social.ttf') format('truetype'),url('../fonts/entypo-social.svg#EntypoRegular') format('svg');font-weight:normal;font-style:normal}
